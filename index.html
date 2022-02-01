@@ -12,12 +12,13 @@
 
 <body>
     <div class="container">
+
         <!-- ********************************Navbar start************************************-->
 
         <div class="nav-container">
             <nav class="nav-bar">
                 <ul>
-                    <li><a href=""><i class="fas fa-bars i1"></i></a></li>
+                    <li><a href="./index.html"><i class="fas fa-bars i1"></i></a></li>
                     <li><a href=""><i class="fas fa-building i2"> Lithos Restaurant, Athens</i></a></li>
                     <li><a href=""><i class="fas fa-arrow-alt-circle-left i3"></i></a></li>
 
@@ -43,32 +44,38 @@
             <i class="fas fa-times-circle"></i>
         </div>
         <div class="info-bar">
-            <button type="button"><a href="./guest.html">Guest Info</a></button>
-            <button type="button"><a href="./booking.html"> Booking Info</a></button>
+            <button type="button" id="guest-btn"><a href="./guest.html">Guest Info</a></button>
+            <button type="button" id="booking-btn"><a href="./booking.html"> Booking Info</a></button>
         </div>
 
 
         <!-- ********************************Body start************************************-->
-        <div class="body-container">
+
+        <div class="body-container" style="height: 70vh;">
+
+            <!-- ********************************Search Bar start************************************-->
             <div class="search-box">
                 <form action="">
-
                     <input id="search-bar" type="text"
                         style="background:url(./Images/search-solid.svg) no-repeat left; margin-right: 5px; background-size: 25px; padding-left: 30px;"
                         placeholder="search guest">
-                   
-
                 </form>
-           
+
+            <!-- ********************************Search Bar end************************************-->
+            
+            </div>
+            <div class="footer-buttons">
+                <button type="button"><a href="./guest.html">Create New Reservation</a></button>
+
+            </div>
+
         </div>
 
-    </div>
 
 
 
 
-
-    <script src="./script.js"></script>
+        <script src="./script.js"></script>
 </body>
 
 </html>

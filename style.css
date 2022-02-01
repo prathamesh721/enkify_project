@@ -1,11 +1,22 @@
+
+
+
 :root{
     color: white;
+    --darkBlue: #202632;
+    --lightBlue: #26293F;
+    --tomato:#FF7E36;
+    --grey:#313641;
 }
-
+button a{
+    color: white;
+    text-decoration: none;
+    
+}
 .container{
     margin: auto;
     width: 85vw;
-    height: 100vh;
+    height: 100vh;  
     position: relative;
     
 }
@@ -13,16 +24,44 @@
     width: 50%;
     margin: auto;
     position: relative;
-    border: 1px solid black;
+    
 }
-
-
+.grid-container {
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+  .grid-container2{
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-columns: auto;
+}
+  .grid-container .grid-item{
+    text-align: center; 
+    margin: 0;
+}
+.grid-item label{
+    margin-right: 10rem;
+}
+.grid-item4 label{
+    margin-right: 12rem;
+}
+.grid-item3 label{
+    text-align: left;
+    margin-right: 12rem;    
+}
+.grid-item input{
+    height: 5vh;
+    width: 17vw;
+    
+}
 .nav-bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 6.5vh;
-    background-color: #202632;
+    background-color: var(--darkBlue);
     position: relative;
     
     
@@ -101,7 +140,7 @@
     align-items: center;
     justify-content: space-between;
     height: 4vh;
-    background-color: #26293f;
+    background-color: var(--lightBlue);
     
     padding: 8px;
     border-bottom: 1px solid white;
@@ -111,7 +150,7 @@
     align-items: center;
     justify-content: space-evenly;
     height: 10vh;
-    background-color: #202632;
+    background-color: var(--darkBlue);
 }
 .info-bar button{
     color: white;
@@ -122,8 +161,8 @@
     border-style: none;
 }
 .body-container{
-    height: 120vh;
-    background-color: #313641;
+    height: 130vh;
+    background-color: var(--grey);
 }
 .search-box{
     margin: auto;
@@ -135,6 +174,7 @@
     
     
 }
+
 .search-box input{
     
     border: 1px solid white;
@@ -148,63 +188,34 @@
 .search-box input:focus{
     color: white;
 }
-#fName{
-    
-    position: absolute;
-    text-align: center;
-    left: 1rem;
-    margin: -0.5rem;
-    
-    
-}
-#lName{
-    
-    position: absolute;
-    text-align: center;
-    left: 18rem;
-    margin: -0.5rem;
-    
-}
-.name{
-    display: flex;
-    position: absolute;
-    top: 5%;
-    left: 9.5%;
-   
-}
-
-.name input{
-    background-color: white;
-}
-.phone-details{
-    position: absolute;
-    top: 25%;
-    left: 9.5%;
-    display: flex;
 
 
-}
+
+
 .status{
-    margin: 0;
+    margin: auto;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 8px 10px;
+    justify-content: space-around;
+    margin: 0.5rem 1.5rem;
    
     
     
 }
 .outer-status{
-    position: absolute;
-    left:10%;
-    top:48%;
-    height: 8.5vh;
-    width: 34.5vw;
+    
     text-align: center;
+    height: 8.5vh;
+    width: 38vw;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    
     background-color: #202632;
     border-radius: 3px;
+   
+    
     
    
     
@@ -214,26 +225,46 @@
     
 }
 .comment-section{
-    
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+    width: 44vw;
+   
     
 }
 .comment-section input{
-    
     height: 5vh;
-    width: 34.5vw;
+    width: 44vw;
 }
 .vist-tags{
+
    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   margin-top: 1rem;
+    text-align: center;
     
     
+}
+.btn-tags{
+    margin: auto;
+    text-align: left;
+    height: 9.5vh;
+    width: 42vw;
+    border: 2px solid white;
+    position: relative;
+    padding: 0.8rem;
+    border-radius: 00.1rem;
+    
+}
+.btn-tags::before{
+content: '';
+position: absolute;
+border: 4px solid var(--darkBlue);
+top: 0.05rem;
+  left: 0.05rem;
+  right: 0.05rem;
+  bottom: 0.05rem;
+  border-radius: 00.1rem;
+
 }
 .vist-tags input{
     
@@ -296,7 +327,8 @@
     margin-top: 2rem;
     height: 10vh;
     width: 85vw;
-    background-color: #26293F;
+    background-color: var(--lightBlue);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,6 +347,46 @@
     border-radius: 3px;
     
 }
+.resto-icons{
+    
+    display: flex;
+    width: 25.7vw;
+    height: 7vh;
+    background-color: #202632;
+    margin-top: 4rem;
+    justify-content: center;
+  align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+    
+}
+.resto-icon .fas, .far{
+    
+   margin: auto 0.5rem;
+   padding-top: 0.5rem;
+   height: 1.5rem;
+   width: 3.8rem;
+   background-color: #ff7e36;
+   text-align: center;
+   border-radius: 0.2rem;
+}
+
+
+.btn-tags button{
+    font-size: 0.7rem;
+    margin: 0.1rem 0.1rem;
+    color: var(--tomato);
+    font-weight: bolder;
+    border-radius: 00.2rem;
+    outline: none;
+    padding: 00.3rem;
+    
+}
+#btn .active{
+    background-color: red;
+}
 
 /* ------------------Calender style------------------------- */
 .cal{
@@ -322,6 +394,7 @@
     justify-content: center;
     padding:  2rem 10rem;
     justify-content: space-around;
+    position: relative;
 }
 
 
@@ -421,25 +494,3 @@ opacity: 0.95;
     background-color: #ff7e36;
   }
 
-.resto-icons{
-    display: flex;
-    width: 23.5vw;
-    height: 7vh;
-    background-color: #202632;
-    margin-top: 1.5rem;
-   
-  
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-.resto-icon .fas, .far{
-    
-   margin: auto 0.5rem;
-   padding-top: 0.5rem;
-   height: 1.5rem;
-   width: 4rem;
-   background-color: #ff7e36;
-   text-align: center;
-   border-radius: 0.2rem;
-}
